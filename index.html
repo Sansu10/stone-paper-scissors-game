@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="main-root">
+      <div class="score-section">
+        <div class="title">
+          <h3>ROCK</h3>
+          <h3>PAPER</h3>
+          <h3>SCISSOR</h3>
+        </div>
+        <div class="scoreboard">
+          <div>Your Score</div>
+          <div id="player-score">0</div>
+        </div>
+        <div class="scoreboard">
+            <div>Computer Score</div>
+            <div id="computer-score">0</div>
+          </div>
+      </div>
+      <div class="game-area">
+        <div class="selection-on">
+          <div class="triangle-box">
+            <div class="line-top"></div>
+            <div class="line-middle"></div>
+            <div class="rock-container">
+              <img src="images/stone.project.png" alt="rock" />
+            </div>
+          </div>
+          <div class="bottom-box">
+            <div class="line-left"></div>
+            <div class="paper-container">
+              <img src="images/paper.project.png" alt="paper" />
+            </div>
+            <div class="scissor-container">
+              <img src="images/scissors.project.png" alt="scissor" />
+            </div>
+          </div>
+        </div>
+        <div class="selection-off"></div>
+      </div>
+      <div class="tie-message">This is Tie Please <span>TRY AGAIN</span></div>
+    </div>
+    <div>
+      <div class="rules-modal">
+        <button id="close-rules" onclick="gameRule()">X</button>
+        <h3>GAME RULES</h3>
+        <ul>
+          <li>
+            Rock beats scissors, scissors beat paper, and paper beats rock.
+          </li>
+          <li>
+            Agree ahead of time whether you’ll count off “rock, paper, scissors,
+            shoot” or just “rock, paper, scissors.”
+          </li>
+          <li>
+            Use rock, paper, scissors to settle minor decisions or simply play
+            to pass the time
+          </li>
+          <li>
+            If both players lay down the same hand, each player lays down
+            another hand
+          </li>
+        </ul>
+      </div>
+      <button class="rules-button" onclick="gameRule()">RULE</button> 
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
